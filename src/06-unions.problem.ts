@@ -1,3 +1,4 @@
+type roleType = 'admin' | 'user' | 'super-admin'
 interface User {
   id: number;
   firstName: string;
@@ -8,7 +9,7 @@ interface User {
    * - 'user'
    * - 'super-admin'
    */
-  role: string;
+  role: roleType;
 }
 
 export const defaultUser: User = {
